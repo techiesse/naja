@@ -69,14 +69,22 @@ def filter(f, it):
     return list(_filter(f, it))
 
 
-# Misc
+def zipWith(f, it1, it2):
+    ret = []
+
+    for elem in zip(it1, it2):
+        ret.append(f(elem[0], elem[1]))
+
+    return ret
+
+
+# Function Generation
 def flip(f):
     def ret(a, b):
         return f(b, a)
     return ret
 
 
-# Function Generation
 def compose(f1, f2):
     def ret(*args):
         return f1(f2(*args))

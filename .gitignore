@@ -1,6 +1,10 @@
-/naja.egg-info
 /temp
 /tcl
 /Include
 /Lib
 /Scripts
+/.pypirc
+/pip-selfcheck.json
+/najha.egg-info
+__pycache__
+/dist

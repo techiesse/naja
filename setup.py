@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='najha',
-      version='0.2',
+      version='0.3',
       description='General purpose libraries for Python',
       url='https://github.com/techiesse/najha',
       author='Eric Chiesse',

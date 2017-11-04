@@ -64,6 +64,11 @@ def map(f, it):
     return list(_map(f, it))
 
 
+def map_(f, iterable):
+    for v in iterable:
+        f(v)
+
+
 _filter = filter
 def filter(f, it):
     return list(_filter(f, it))
